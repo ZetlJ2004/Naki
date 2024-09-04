@@ -1,0 +1,136 @@
+.headers,.phone_foot,.sjd_ss,.xxk,.sj_pic,.sj_banner,.sjd_xyfg,.sj_banner_img{display: none;}
+body{min-width:300px; padding: 0; margin: 0;}
+@media(max-width:800px){
+.headers,.phone_foot,.sjd_ss,.xxk,.sj_banner,.sjd_xyfg,.sj_banner_img{display: block;}
+*{box-sizing: border-box;}
+body{background: none;}
+.top,.con_left,.con_right_bread>span,.footer,.copy,.shadow,.ban_nav,.index_con,.tzgg,.index_con_pic,.slide,.mkeFocus,.banner_img{display: none;}
+.sj_pic,.sj_pic2{display: block;}
+/*  页头  */
+.headers{height: 80px; width: 100%; background: url(st_bg.png) right center no-repeat rgba(0,0,0,0.5); position: absolute; top: 0px; z-index: 999999;}
+.headers .index{width: 34px; height: 28px; margin-right: 10px; margin-top: 26px; display: block; float: right;}
+.headers .index img{width: 24px;}
+.headers .logo2{margin-left: 20px; height: auto; margin-top: 3px; width: 240px; display: block; float: left;position: absolute; left: 0; top: 0; padding-top: 0;}
+.headers .logo2 img{width: 100%;}
+/*  导航  */
+.fh_dh{width:180px; display:none; overflow-y:scroll; padding-top:6px; z-index:9999; background:url(dh_bg.png);background-size: 100% 100%; opacity: 0.9; height:100%; position:fixed; top:0px; right:-180px; }
+.fh_dh p.th{color: #fff; font-size: 13px; line-height: 40px; text-align: center;}
+.fh_dh ul li{line-height:46px; text-align:left;}
+.fh_dh ul li .yj_a{ display:block;padding:0px 20px; font-size:16px; text-indent: 8px; letter-spacing: 1px;}
+.fh_dh ul li .yj_a ,.fh_dh ul li .yj_a:hover ,.fh_dh ul li .yj_a:visited ,.fh_dh ul li .yj_a:link , .fh_dh ul li .yj_a:active{ color:#fff;}
+.fh_dh ul .on .yj_a{border-right: 5px solid #d3a721;}
+.fh_dh ul li .ej{display: none;}
+.fh_dh ul li .sj{display: none;}
+.fh_dh ul li .ej .sj_p .sj a{padding: 0 20px; text-indent: 8px; font-size: 12px; color: #fff; display: block; height: 36px; line-height: 36px;}
+.fh_dh ul li .ej a{padding: 0 26px; text-indent: 8px; font-size: 15px; color: #fff; display: block; height: 36px; line-height: 36px;}
+.fh_bc,.menu_bc{position:fixed; top:0px;left:0px; width:100%; height:100%; background:#000;opacity:0; display:none; z-index:9999;}
+
+/*轮播*/
+.sj_banner img{width: 100%; height: 100%;}
+.sj_ban{position: relative;}
+.banner{width: 100%; z-index: 9;}
+
+/*  搜索  */
+.sjd_ss{position: absolute; bottom: -30px; height:55px; width: 80%; margin: 0 10%; background: url(ss_bg.png) left bottom no-repeat;background-size: 100% auto;z-index: 999;}
+.sjd_ss form{height: 55px; position: relative; padding-right:64px;}
+.btn_search{width: 64px; height: 52px; margin: 0; position: absolute; right: 0;border: none; outline: none; background: url(ss_03.png) right top no-repeat;}
+.search{width: 100%; height: 52px; background: #FFFFFF; border: none; outline: none;color: #999; padding:10px  20px; font-size: 16px;}
+/*  选项卡  */
+.xxk{width: 100%; margin-top: 50px;}
+.tabLink{height: 60px; background: url(ss_bg.png) bottom left no-repeat;background-size: 100% auto; line-height: 60px;}
+.tabLink b{width: 33%; font-weight: normal; font-size: 20px; color: #333; position: relative; float: left; cursor: pointer; text-align: center;}
+.tabLink b.active{color: #294c7d; font-weight: bold;}
+.tabItem{display: none;}
+.tabItem.active{display: block;}
+.listCon{margin-top: 10px;}
+.listCon li{height: 50px;border-bottom: 1px solid #dcdcdc;}
+.listCon li a{display: block; width: 100%; height: 50px; line-height: 50px;font-size: 16px; white-space:nowrap;text-overflow:ellipsis; overflow: hidden;}
+.listCon li a:hover{color: #294c7d;}
+.tabItem .more{width: 90px; padding-left: 10px; height: 50px;  background: url(more_03.png) bottom right no-repeat; float: right;}
+.tabItem .more a{line-height:50px;color: #294c7d;font-size: 15px;}
+/*  专题活动  */
+.index_con2.sj_index_top{background: url(sj_index.png) left top no-repeat; background-size: 100% auto; margin: 0; margin-top: 50px;}
+.sj_index_top{width: 100%; height: auto !important; overflow: hidden; background: url(sj_index2.png) left top no-repeat;background-size: 100% auto; margin-top: 50px;}
+.index_h1{background: url(ss_bg.png) left bottom no-repeat;background-size: 100% auto; margin-top: 70px; height: 60px; line-height: 60px; font-size: 20px;}
+.index_h1 span{padding-right: 0;}
+.index_h1 span a{font-size: 15px;color: #294c7d;}
+.sj_pic{height: auto; overflow: hidden;}
+.sj_pic a{display: block; width:47%; float: left;}
+.sj_pic a:nth-child(odd){margin-right: 6%;}
+.index_con_pic img{width: 100%;}
+/*  快速通道  */
+.index_con_pic.sj_pic2 ul li img{display: none;}
+.index_h2{ background: url(ss_bg.png) left bottom no-repeat;background-size: 100% auto; margin-top: 70px !important; height: 60px !important; line-height: 60px !important; font-size: 20px;}
+.index_con_pic ul{width: 100% !important;}
+.index_con_pic ul li{width:47% !important; float: left; height: 50px;margin-top: 15px; background: url(sj_index_con.jpg) left bottom no-repeat; background-size: 100% auto;}
+.index_con_pic ul li:nth-child(odd){margin-right: 6%;}
+.index_con_pic ul li a{display: block;line-height: 50px; text-align: center; font-size: 16px;}
+.index_con_pic ul li a:hover{color: #294c7d;}
+/*  图片  */
+.banner_img{width: 100%; }
+/*  底部  */
+.phone_foot{width: 100%;padding-top: 50px; margin-top: 30px; position: relative;}
+.foot_logo{width: 30%; height: auto; overflow: hidden; margin: 0 35%; position: absolute; top: 0;z-index: 99;}
+.foot_logo img{width: 100%; height: auto; }
+.foot_txt{background: url(sj_foot_bg2.jpg); background-size: 100% 100%; padding: 40px 100px 20px 15px;position: relative;}
+.foot_txt p{line-height: 30px; color: #FFFFFF; margin: 5px 0; font-size: 14px;}
+.foot_txt p a{line-height: 30px; font-size: 14px; color: #FFFFFF;}
+.foot_txt p img{width: 14px ;height: 14px; margin-top: 1px; margin-right: 3px;}
+.foot_txt>img{position: absolute; right: 15px; bottom: 80px;width: 60px;}
+/*  列表页列表  */
+.content{width: 100%;overflow: hidden; padding: 0 20px;}
+.con_right{width: 100%; margin-top: 20px;}
+.con_right_bread{height: 60px; line-height: 60px; border: none; background: url(ss_bg.png) left bottom no-repeat;background-size: 100% auto;}
+.con_right_bread h1{margin-left: 5px;color:#294c7d; font-weight: bold;}
+
+.con_right_list{margin: 0; min-height: 340px; margin-top: 10px;}
+.con_right_list li{position: relative; padding-left: 10px; padding-right: 60px;height: 50px; line-height: 50px;}
+.con_right_list li a{width: 100%;text-overflow:ellipsis; font-size: 16px;}
+.con_right_list li span{position: absolute; right: 0;}
+/*页数*/
+.con_right>div:last-child{text-align: center !important; margin: 30px 0 !important;}
+.pagebox span.pagebox_num,.pagebox span.pagebox_num_nonce{display:none;}
+.pagebox_next{font-size: 16px;margin: 0 5px;line-height: 40px;}
+.pageNumInput{height: 30px; line-height: 30px; margin: 5px; border: 1px solid #294C7D; border-radius: 3px;}
+.pagebox{font-size: 16px; line-height: 40px;}
+.gobutton{height: 30px; line-height: 30px; margin: 5px;color: #FFFFFF; font-size: 16px; border: none; outline: none; background: #294C7D; padding:0 15px; border-radius: 3px;border: 1px solid #294C7D; }
+/*  内容页内容  */
+.con_right_content{margin-left: 0;}
+.news_h1{height: auto;}
+.news_h1 font{font-size: 18px !important;}
+.wenzhang_content{padding: 0 5px; min-height: 300px;margin-top: 20px;}
+.wenzhang_content p{font-size: 16px !important; }
+.wenzhang_content img{width: 90% !important; height: auto !important;}
+/*校园风光*/
+.sjd_xyfg ul{width: 100%; height: auto; min-height: 300px; overflow: hidden;}
+.sjd_xyfg ul li{width: 46%; float: left; margin: 0 2%; margin-bottom: 15px;}
+.sjd_xyfg ul li a{display: block; width: 100%; height: 100%; text-align: center; font-size: 16px;}
+.sjd_xyfg ul li a:hover{color: #294c7d;}
+.sjd_xyfg ul li a img{width: 100%; height: auto; margin-bottom: 5px;}
+.pages{width: 100%; height: 40px; line-height: 40px; margin-top: 10px; text-align: center;}
+/*  治理架构  */
+.wrapper{width: 100% !important;}
+.ul_ul{width: 100% !important;}
+.title h5{text-align: left;}
+.twelve table{width: 100%;}
+/*  历史沿革  */
+.con_link_content1 embed{width: 100% !important;}
+/*  学校标志  */
+.twelve img{max-width: 90%; height: auto;}
+.twelve p{width: 100% !important;}
+/*  教学单位  */
+.con_link_content{width: 100%;}
+.table1{width: 100% !important;}
+/*  继续教育  */
+.copy_link{height: auto !important;background:url(https://www.hebtu.edu.cn/resources/40/20141008104256197.png) no-repeat 0 0 #f1f1f1 !important;}
+.copy_link img{width: auto !important;}
+}
+/*@media(max-width:650px){
+.phone_foot p{line-height: 20px;}
+.phone_foot p a{line-height: 20px;}
+
+}*/
+@media(max-width:500px){
+.index_h1{margin-top: 40px;}
+.index_h2{margin-top: 40px !important;}
+}
